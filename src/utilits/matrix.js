@@ -34,8 +34,17 @@ export function getAllNeighbors(coordinates) {
   const n_6 = matrix[y + 1]?.[x - 1];
   const n_7 = matrix[y]?.[x - 1];
   const n_8 = matrix[y - 1]?.[x - 1];
+  const n_9 = matrix[y - 1]?.[x];
+  const n_10 = matrix[y - 1]?.[x + 1];
+  const n_11 = matrix[y]?.[x + 1];
+  const n_12 = matrix[y + 1]?.[x + 1];
+  const n_13 = matrix[y + 1]?.[x];
+  const n_14 = matrix[y + 1]?.[x - 1];
+  const n_15 = matrix[y]?.[x - 1];
+  const n_16 = matrix[y - 1]?.[x - 1];
 
-  return [n_1, n_2, n_3, n_4, n_5, n_6, n_7, n_8].filter(
+
+  return [n_1, n_2, n_3, n_4, n_5, n_6, n_7, n_8, n_9, n_10, n_11, n_12, n_13, n_14, n_15, n_16].filter(
     (item) => typeof item !== "undefined"
   );
 }
