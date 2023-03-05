@@ -5,7 +5,10 @@
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html",
+    "upload": "localazy upload",
+    "download": "localazy download",
+    "list": "localazy list"
   },
   "dependencies": {
     "parcel-bundler": "^1.6.1"
