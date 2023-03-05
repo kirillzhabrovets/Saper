@@ -1,4 +1,4 @@
-import { createMatrix } from "./utilits/matrix";
+import {createMatrix} from "./utilits/matrix";
 
 function startGame() {
     createMatrix();
